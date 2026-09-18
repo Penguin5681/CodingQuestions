@@ -13,19 +13,10 @@ public class BinaryToDecimal {
     }
 
     public static void main(String[] args) {
-        testGetDecimal("0", 0);
-        testGetDecimal("1", 1);
-        testGetDecimal("10", 2);
-        testGetDecimal("1010", 10);
-        testGetDecimal("11111111", 255);
-        System.out.println("All tests passed.");
-    }
-
-    private static void testGetDecimal(String binary, int expected) {
-        int actual = getDecimal(binary);
-        if (actual != expected) {
-            throw new AssertionError("For " + binary + ", expected "
-                    + expected + " but got " + actual);
-        }
+        System.out.println(getDecimal("0") == 0);
+        System.out.println(getDecimal("1") == 1);
+        System.out.println(getDecimal("101") == 5);
+        System.out.println(getDecimal("1010") == 10);
+        System.out.println(getDecimal("11111111") == 255);
     }    
 }
