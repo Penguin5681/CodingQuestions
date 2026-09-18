@@ -47,3 +47,35 @@ This repository contains solutions to various fundamental coding problems I have
 ### 11. [Table](./Tier_1/Table.java)
 - **Concept:** Loops & Basic Arithmetic
 - **Approach:** Uses a standard `for` loop from $1$ to $10$ to display the multiplication table of a given number $N$, and continuously accumulates the multiples into a `sum` variable to print the total at the end.
+
+### 12. [Count Occurences](./Tier_1/CountOccurences.java)
+- **Concept:** Hash Maps & Frequency Counting
+- **Approach:** Uses a `HashMap` to iterate over an array of numbers. For each element, it checks if it is already present; if not, it defaults to 0, adding 1 to the occurrence count. Finally, it iterates over the map's entry set to print frequencies.
+
+### 13. [First K Words](./Tier_1/FirstKWords.java)
+- **Concept:** String Manipulation & Splitting
+- **Approach:** Splits the given string on space `" "` into an array of words. It then loops up to $K$ (or the length of the words array, whichever is smaller) and appends each word into a `StringBuilder` separated by a space.
+
+### 14. [Length Of Last Word](./Tier_1/LengthOfLastWord.java)
+- **Concept:** String Traversal (Reverse)
+- **Approach:** Trims the input string to remove trailing spaces, then iterates backward from the end of the string. Upon finding the first space character, it extracts the substring and returns its length, effectively isolating the last word.
+
+### 15. [Max In Array](./Tier_1/MaxInArray.java)
+- **Concept:** Linear Array Traversal
+- **Approach:** Initializes `currentMax` with the first element of the array. It loops from the second element onward, updating `currentMax` (and `indexMax`) whenever a larger element is encountered, resulting in an $O(N)$ lookup.
+
+### 16. [Missing Number](./Tier_1/MissingNumber.java)
+- **Concept:** Arithmetic Series Sum
+- **Approach:** Calculates the expected mathematical sum of the first $N$ numbers using the formula $N \times (N + 1) / 2$. Then, it iteratively sums the elements actually present in the array and returns the absolute difference.
+
+### 17. [Remove Duplicates](./Tier_1/RemoveDuplicates.java)
+- **Concept:** Sets for Uniqueness
+- **Approach:** Traverses the integer array and adds each element to a `HashSet`. Since a set only stores unique values, this effectively filters out all duplicate numbers in $O(N)$ time. The resulting elements are then printed.
+
+### 18. [Standard Deviation](./Tier_1/StandardDeviation.java)
+- **Concept:** Statistical Math (Mean and Variance)
+- **Approach:** Calculates the arithmetic mean (average) by summing all elements and dividing by the length. Next, it calculates the Mean Squared Deviation (MSD) by summing the squared difference of each element from the mean, then dividing by the array length.
+
+### 19. [Sum Of Distances Between Three Points](./Tier_1/SumOfDistancesBetweenThreePoints.java)
+- **Concept:** Euclidean Distance Geometry
+- **Approach:** Defines a helper method to calculate Euclidean distance ($\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$) using `Math.pow` and `Math.sqrt`. Computes the distance for each pair of the three coordinate points and accumulates the sum.
