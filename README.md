@@ -79,3 +79,111 @@ This repository contains solutions to various fundamental coding problems I have
 ### 19. [Sum Of Distances Between Three Points](./Tier_1/SumOfDistancesBetweenThreePoints.java)
 - **Concept:** Euclidean Distance Geometry
 - **Approach:** Defines a helper method to calculate Euclidean distance ($\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$) using `Math.pow` and `Math.sqrt`. Computes the distance for each pair of the three coordinate points and accumulates the sum.
+
+# Coding Questions - Tier 2
+
+This tier contains problems involving strings, arrays, bit manipulation, number operations, and validation.
+
+## Problem Summaries
+
+### 1. [Absolute Difference](./Tier_2/AbsoluteDifference.java)
+- **Concept:** Arrays and absolute difference
+- **Approach:** Counts values whose absolute difference from a target number is less than or equal to the given difference. Returns `-1` if no values match.
+
+### 2. [Count Carry](./Tier_2/CountCarry.java)
+- **Concept:** Digit manipulation
+- **Approach:** Adds two numbers digit by digit and counts the number of carry operations.
+
+### 3. [Encode Character](./Tier_2/EncodeCharacter.java)
+- **Concept:** Number and string manipulation
+- **Approach:** Squares each digit of a number and builds the encoded result in the original order.
+
+### 4. [Is Anagram](./Tier_2/IsAnagram.java)
+- **Concept:** Strings and sorting
+- **Approach:** Sorts the characters of both strings and compares the sorted results.
+
+### 5. [Longest Word](./Tier_2/LongestWord.java)
+- **Concept:** String traversal
+- **Approach:** Splits a sentence into words and returns the longest word. The first word is retained when lengths are equal.
+
+### 6. [Maximum Exponent of 2](./Tier_2/MaxExponentOf2.java)
+- **Concept:** Loops and number operations
+- **Approach:** Iterates through a range and selects the number with the greatest value returned by `countTwos()`.
+
+### 7. [Most Frequent Vowel](./Tier_2/MostFrequentVowel.java)
+- **Concept:** Hash maps and frequency counting
+- **Approach:** Counts character frequencies and returns the vowel with the highest frequency.
+
+### 8. [Move Hyphens to Front](./Tier_2/MoveHyphenstoFront.java)
+- **Concept:** String manipulation
+- **Approach:** Counts the hyphens, places them at the beginning, and appends all other characters afterward.
+
+### 9. [Password Checker](./Tier_2/PasswordChecker.java)
+- **Concept:** Regular expressions and validation
+- **Approach:** Validates password length, uppercase letters, digits, whitespace, slashes, and leading characters using a regular expression.
+
+### 10. [Rearrangement of Bits](./Tier_2/RearrangementOfBits.java)
+- **Concept:** Bit manipulation
+- **Approach:** Counts the set bits using `Integer.bitCount()` and creates a number containing the same number of consecutive `1` bits.
+
+### 11. [Replace Character](./Tier_2/ReplaceCharacter.java)
+- **Concept:** Character arrays
+- **Approach:** Swaps occurrences of two characters throughout a string.
+
+### 12. [Replace Most Frequent Characters](./Tier_2/ReplaceMostFrequentCharacters.java)
+- **Concept:** Hash maps and frequency analysis
+- **Approach:** Finds the `k` most frequent characters and replaces them with a specified character.
+
+### 13. [Reverse Words](./Tier_2/ReverseWords.java)
+- **Concept:** String manipulation
+- **Approach:** Splits a sentence into words and prints them in reverse order.
+
+### 14. [Rhyme Words](./Tier_2/RhymeWords.java)
+- **Concept:** Hash maps and string suffixes
+- **Approach:** Groups words by their final `rhymeLength` characters and prints groups containing at least two words.
+
+### 15. [Sum of Binary Distance](./Tier_2/SumOfBinaryDistance.java)
+- **Concept:** Binary representation
+- **Approach:** Converts a number to binary, maps `0` to `1` and `1` to `2`, and returns the sum of the mapped values.
+
+# Coding Questions - Tier 3
+
+This tier contains problems involving sorting, linked lists, sliding windows, matrices, and string reduction.
+
+## Problem Summaries
+
+### 1. [Chocolate Distribution](./Tier_3/ChocolateDistribution.java)
+- **Concept:** Sorting and sliding windows
+- **Approach:** Sorts packet quantities and checks each group of `m` consecutive packets to find the minimum difference between the largest and smallest amounts.
+
+### 2. [Linked List Palindrome](./Tier_3/LinkedListPalindrome.java)
+- **Concept:** Linked lists
+- **Approach:** Compares and removes the first and last elements repeatedly to determine whether the list reads the same in both directions.
+
+### 3. [Linked Lists](./Tier_3/LinkedLists.java)
+- **Concept:** Linked list insertion
+- **Approach:** Inserts values at the beginning of a `LinkedList` using `addFirst()`, then traverses and prints the list.
+
+### 4. [Longest Substring Without Repeating Characters](./Tier_3/LongestSubstringWithoutRepeatingCharacters.java)
+- **Concept:** Sliding window and hash sets
+- **Approach:** Uses a moving window and a `HashSet` to track unique characters while searching for the longest substring without repeated characters.
+
+### 5. [Maximum Favourite Song](./Tier_3/MaxFavouriteSong.java)
+- **Concept:** Sliding window and string traversal
+- **Approach:** Examines every substring of length `k` and returns the maximum number of `a` characters found in any window.
+
+### 6. [Pair Sum with Maximum Product](./Tier_3/PairSumwithMaximumProduct.java)
+- **Concept:** Sorting and two pointers
+- **Approach:** Sorts the array and searches for pairs whose sum equals the target while comparing their products.
+
+### 7. [Remove Adjacent Equal Characters](./Tier_3/RemoveAdj.java)
+- **Concept:** String reduction and `StringBuilder`
+- **Approach:** Removes adjacent equal character pairs and moves backward when necessary so newly formed pairs are also checked.
+
+### 8. [Set Matrix Zeros](./Tier_3/SetMatrixZeros.java)
+- **Concept:** Matrix traversal
+- **Approach:** Intended to set entire rows and columns to zero when a matrix element is zero. Implementation is still in progress.
+
+### 9. [Bulb Switch](./Tier_3/BulbSwitch.java)
+- **Concept:** Array traversal and state changes
+- **Approach:** Intended to calculate the minimum switches needed to reach the required bulb state. Implementation is still in progress.
