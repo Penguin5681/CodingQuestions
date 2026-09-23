@@ -182,8 +182,12 @@ This tier contains problems involving sorting, linked lists, sliding windows, ma
 
 ### 8. [Set Matrix Zeros](./Tier_3/SetMatrixZeros.java)
 - **Concept:** Matrix traversal
-- **Approach:** Intended to set entire rows and columns to zero when a matrix element is zero. Implementation is still in progress.
+- **Approach:** Uses boolean arrays to record which rows and columns contain zeroes, then sets every element in those rows and columns to zero.
 
 ### 9. [Bulb Switch](./Tier_3/BulbSwitch.java)
 - **Concept:** Array traversal and state changes
-- **Approach:** Intended to calculate the minimum switches needed to reach the required bulb state. Implementation is still in progress.
+- **Approach:** Traverses the bulbs from left to right while tracking the current flip state. When an effective bulb value is `0`, it flips the remaining bulbs and increments the switch count.
+
+### 10. [Matrix Even-Odd Second Largest](./Tier_3/MatrixEvenOddSecondLargest.java)
+- **Concept:** Arrays, sorting, and index parity
+- **Approach:** Separates values at even and odd indices into two lists, sorts both lists, and returns the sum of their second-largest values.
