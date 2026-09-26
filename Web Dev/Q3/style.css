@@ -1,0 +1,21 @@
+textarea {
+    width: 50%;
+    height: 80px;
+    padding: 8px;
+    resize: none;
+}
+
+#left.warning {
+    color: #d97706;
+    font-weight: bold;
+}
+
+#left.empty {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
