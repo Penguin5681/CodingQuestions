@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="overview">Overview</button>
+        <button class="tab-btn" data-tab="specs">Specs</button>
+        <button class="tab-btn" data-tab="reviews">Reviews</button>
+    </div>
+    <div class="tab-panel" id="overview">Overview content goes here.</div>
+    <div class="tab-panel hidden" id="specs">Specs content goes here.</div>
+    <div class="tab-panel hidden" id="reviews">Reviews content goes here.</div>
+    <p id="current">Current tab: overview</p>
     <script src="script.js"></script>
 </body>
+
 </html>
