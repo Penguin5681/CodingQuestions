@@ -1,0 +1,20 @@
+.hidden {
+    display: none;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background: #f0f0f0;
+    font-weight: bold;
+}
+
+.faq-answer {
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.icon {
+    display: inline-block;
+    width: 18px;
+}

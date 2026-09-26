@@ -15,7 +15,6 @@ Array.from(childrens).forEach(tab => {
             if (tab.attributes.getNamedItem("data-tab").value == panel.attributes.getNamedItem("id").value) {
                 Array.from(tabPanel).forEach(panel => {
                     panel.classList.add("hidden");
-
                 })
                 panel.classList.remove("hidden");
             }
