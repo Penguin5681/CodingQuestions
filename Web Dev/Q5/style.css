@@ -1,0 +1,18 @@
+.hidden {
+    display: none;
+}
+
+#msg.error {
+    color: #c0392b;
+    font-size: 14px;
+}
+
+#msg.success {
+    color: #1e8449;
+    font-size: 14px;
+}
+
+input {
+    padding: 6px;
+    margin: 4px 0;
+}
