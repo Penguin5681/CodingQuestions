@@ -1,0 +1,23 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+.out-of-stock {
+    background-color: #fdecea;
+}
+
+.low-stock {
+    background-color: #fff4e0;
+}
